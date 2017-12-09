@@ -10,5 +10,5 @@ module.exports = (req, reply) => {
             descriptionThree: descriptions[2].description
         };
     return reply.view('s3', context);
-});
+    });
 };

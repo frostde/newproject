@@ -17,3 +17,17 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function submitnum() {
+    var number = $("#myNumber").val();
+    alert(number);
+    $.ajax({
+        type: 'GET',
+        url: '/fibonacci/' + number,
+        contentType: "application/json; charset=utf-8",
+        success: function (data) {
+        },
+        error: function (data) {
+        }
+    });
+}
